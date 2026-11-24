@@ -9,7 +9,8 @@ Get the newest version from **[Releases](https://github.com/Wick-Creative/wooden
 
 - **Windows:** `Wooden-Minnow-Setup-<version>.exe`
 - **Mac:** `Wooden-Minnow-<version>-mac.dmg` (Intel and Apple silicon)
-- **Linux:** `Wooden-Minnow-<version>.AppImage` (x64)
+- **Ubuntu, Debian, Mint:** `Wooden-Minnow-<version>.deb` (x64)
+- **Other Linux:** `Wooden-Minnow-<version>.AppImage` (x64)
 
 These builds are not signed yet, so your computer will warn you the first time:
 
@@ -17,7 +18,9 @@ These builds are not signed yet, so your computer will warn you the first time:
 - **Mac:** open the `.dmg` and drag Wooden Minnow to Applications. The first time you open it, macOS
   says it cannot check it. Open **System Settings > Privacy & Security**, scroll down and click
   **Open Anyway**, then open it again.
-- **Linux:** make the AppImage runnable (right-click > **Properties > Allow executing**, or
+- **Ubuntu, Debian, Mint:** double-click the `.deb` and click **Install** (it asks for your password).
+  Wooden Minnow is then in your apps.
+- **Other Linux:** make the AppImage runnable (right-click > **Properties > Allow executing**, or
   `chmod +x Wooden-Minnow-*.AppImage`) and open it. If nothing happens, install `libfuse2`. On plain
   GNOME the tray icon needs the AppIndicator extension; the menu is on a right-click either way.
 
@@ -32,5 +35,5 @@ code; text `MINNOW` and the code to the lake from your phone, and it plays your 
 
 ## Updates
 
-On Windows and Linux it updates itself: a new version downloads quietly and installs when the Minnow closes.
+On Windows and Linux it updates itself (the `.deb` asks for your password once as an update installs): a new version downloads quietly and installs when the Minnow closes.
 On a Mac it tells you when there is a new version and links here.
